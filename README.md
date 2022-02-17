@@ -2,6 +2,11 @@
 
 ## 배운내용
 
+#### REACT
+
+- react-reveal (설치하는 과정에서 issue) -> https://stackoverflow.com/questions/68016188/problem-to-install-react-reveal-animation-on-terminal-visual-studio-code
+  but why..?
+
 #### CSS
 
 - justify-content: space-between 으로 동일한 간격으로 펼쳐져 있는 요소 3개 중 2개의 거리를 더 좁히고 싶을때 -> 두 개의 요소를 하나의
@@ -16,3 +21,7 @@
 
 - rightButton이 업었던 accessories 섹션의 경우, rightBtnText가 존재할 때만 컴포넌트를 렌더링 하도록 코드를 짜서 필요없을때는
   보이지 않도록 해결
+
+#### 기타
+
+- vscode에서 ctrl+p 단축키를 통해 검색해서 컴포넌트 파일이나 기타 필요 경로에 접근하는게 가능
