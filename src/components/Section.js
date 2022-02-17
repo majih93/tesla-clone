@@ -17,7 +17,7 @@ function Section({
       <Buttons>
         <ButtonGroup>
           <LeftButton>{leftBtnText}</LeftButton>
-          <RightButton>{rightBtnText}</RightButton>
+          {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
         </ButtonGroup>
         <DownArrow src="/images/down-arrow.svg" />
       </Buttons>
@@ -42,6 +42,7 @@ const Wrap = styled.div`
   justify-content: space-between; // 원래는 horizontal 배치에 관여하는 속성이지만, 지금은 방향이 바뀌어있으므로 vertical 속성에 해당됨
   align-items: center; // horizontal alignment
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
+  // props로 전달받은 backgroundImage를 Wrap 컴포넌트에 전달 -> 템플릿 리터럴로 js작성하듯이 작성해서 링크 설정하는게 가능함
 `;
 
 const ItemText = styled.div`
