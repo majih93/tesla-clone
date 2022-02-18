@@ -1,5 +1,7 @@
 # 유투브 리액트 강의
 
+1:32 부분 듣는 중
+
 ## 배운내용
 
 #### REACT
@@ -21,6 +23,12 @@
 
 - rightButton이 업었던 accessories 섹션의 경우, rightBtnText가 존재할 때만 컴포넌트를 렌더링 하도록 코드를 짜서 필요없을때는
   보이지 않도록 해결
+
+  - z-index로 overlapping? 구현함 -> BurgerNav가 다른 페이지 내용 위에 오도록.
+
+  - TIP: to align something, WRAP IT
+    -> 사이드바에서 닫는 버튼 만들고, 버튼을 우측에 붙이고 싶을 때, 해당 버튼을 div로 감싸고 그 안에서 display flex 활용해서
+    배치하면 됨, to align something u need a parent wrapper
 
 #### 기타
 
