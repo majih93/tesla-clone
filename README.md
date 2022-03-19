@@ -29,6 +29,52 @@
   - TIP: to align something, WRAP IT
     -> 사이드바에서 닫는 버튼 만들고, 버튼을 우측에 붙이고 싶을 때, 해당 버튼을 div로 감싸고 그 안에서 display flex 활용해서
     배치하면 됨, to align something u need a parent wrapper
+   
+   - typescript / styled component 사용해서 코딩할 때, react state의 변경을 styling 변화에 영향을 주도록 코드를 짜려면?
+
+const NextButton = styled.button`
+  width: 190px;
+  height: 44px;
+  background: #999999;
+  background-color: ${(props) => props.color};
+  border: 1px solid #0420bf;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  > span {
+    width: 30px;
+    height: 24px;
+    font-family: "Spoqa Han Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+`;
+
+vs
+
+
+const TermDetailContainer = styled.div<{ showDetail: boolean }>`
+  width: 615px;
+  margin-top: 10px;
+  margin-left: 120px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #07145a;
+  line-height: 20px;
+  ${({ showDetail }) => {
+    if (!showDetail) {
+      return "display: none";
+    }
+  }}
+`;
+
+차이를 알아봐야함
+
+   
 
 #### 기타
 
